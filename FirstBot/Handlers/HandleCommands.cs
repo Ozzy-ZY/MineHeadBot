@@ -13,7 +13,15 @@ namespace FirstBot.Handlers
         {
             var name = command.Data.Options.First().Value;
             var imgPath = await GetMineHead.GetMinecraftAvatarAsync(name as string ?? "zyad");
+            Helpers.printRed("Responding with The Requested Head...");
             await command.RespondWithFileAsync(imgPath);
+            Helpers.PrintGreen("success!");
+        }
+
+        public static async Task HandleAppCommand(SocketSlashCommand command)
+        {
+            await command.RespondAsync("Fuck this");
+            await Task.Run(() => Console.WriteLine("fuck this"));
         }
     }
 }

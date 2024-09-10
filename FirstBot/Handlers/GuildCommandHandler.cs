@@ -16,6 +16,11 @@ namespace FirstBot.Handlers
             {
                 case "minehead":
                     await HandleCommands.HandleMineHeadCommand(command);
+                    Helpers.PrintBlue("passing the command to the MineHeadCommandHandler");
+                    break;
+
+                case "fuck-discord":
+                    await HandleCommands.HandleAppCommand(command);
                     break;
             }
         }

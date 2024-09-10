@@ -25,9 +25,9 @@ namespace FirstBot
             _client = new DiscordSocketClient(Config);
             //_client.MessageReceived += MessageHandler;
             _client.Ready += MineHead.CreateMineHeadCommand;
+            _client.Ready += AppCommand.CreateAppCommand;
             _client.SlashCommandExecuted += GuildCommandHandler.SlashCommandHandler;
-
-            Console.WriteLine("INIT Program");
+            Helpers.PrintGreen("INIT Program");
         }
 
         public async Task StartBotAsync()
@@ -37,7 +37,7 @@ namespace FirstBot
             await _client.StartAsync();
             //_client.Ready += RegisterCommandsAsync;
             await Task.Delay(-1);
-            Console.WriteLine("Started Bot Async indifnitly");
+            Helpers.PrintBlue("Started Bot Async indifnitly");
         }
     }
 }
