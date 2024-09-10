@@ -59,7 +59,7 @@ namespace FirstBot
         //            await command.RespondAsync("Unknown command.");
         //            break;
         //    }
-        //}
+        //}fsf
 
         private static async Task Main(string[] args)
         {
