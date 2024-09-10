@@ -10,7 +10,7 @@ namespace FirstBot
     {
         private readonly DiscordSocketClient _client;
 
-        private const string _token = @"MTI4Mjk5Mzg2MTU2Nzk3MTMyOA.GhWaUn.lxRXrE7196OpQi03cgN1bsSv9ggNqRjrHfBPWI";
+        private const string _token = @"YOUR TOKEN";
 
         public Program()
         {
@@ -99,8 +99,8 @@ namespace FirstBot
             await command.RespondWithFileAsync(imgPath);
         }
 
-        // bot Id : 1282993861567971328
-        // GUILD Id : 481968987929051167
+        // bot Id : ID
+        // GUILD Id : Id
 
         //private async Task RegisterCommandsAsync()
         //{
